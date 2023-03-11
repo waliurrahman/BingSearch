@@ -7,7 +7,7 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    router.push(`${process.env.NEXT_PUBLIC_SITE_URL}/web?query=${query}`);
+    router.push(`/web?query=${query}`);
   };
 
   const handleChange = (e) => {
