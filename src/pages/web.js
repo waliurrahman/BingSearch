@@ -19,7 +19,7 @@ export default function Web({ data }) {
       <div className='form-box'>
         <form onSubmit={(e) => {
           e.preventDefault();
-          router.push(`/web?query=${e.target.query.value}`);
+          router.push(`${process.env.NEXT_PUBLIC_SITE_URL}/web?query=${e.target.query.value}`);
           // router.push(`/?query=${query}`);
 
         }}>
