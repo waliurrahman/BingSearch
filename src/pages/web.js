@@ -47,7 +47,7 @@ export default function Web({ data }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const res = await fetch(`https://sohaji.vercel.app/api/search/web?query=${query.query}`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/search/web?query=${query.query}`)
   const data = await res.json()
 
   if (!data) {
