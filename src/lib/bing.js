@@ -8,7 +8,7 @@ export async function getSearchResults(query) {
     }
   );
   const data = await response.json();
-  console.log(data)
+  // console.log(data)
   // return data;
   return data.webPages.value;
 }
